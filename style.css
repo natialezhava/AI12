@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h3 {
+    color: white;
+}
+body {
+    background-color: aliceblue;
+    padding: 40px;
+}
+.container {
+    display: flex;
+    gap: 20px;
+}
+.left-div {
+    /* background-color: yellow; */
+    flex: 2;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.aside-div {
+    background-color: rgb(253, 253, 253);
+    flex: 1;
+}
+.left-div__top, .left-div__bottom {
+    display: flex;
+    gap: 10px;
+}
+.left-div__top1 {
+    background-color:rgb(131, 27, 235);
+    flex: 1;
+    border-radius: 20px;
+} 
+.left-div__bottom2 {
+    flex: 1;
+    background-color:rgb(1, 10, 24);
+    border-radius: 20px;
+}
+
+/* people styles */
+.image-daniel {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.left-div__top1 {
+    padding: 40px;
+}
+.image-daniel > img {
+    border-radius: 50px;
+    border-color: white;
+    border-style: solid;
+}
+.image-daniel > div {
+    margin-top: 10px;
+}
+.left-div__top2 {
+    padding: 40px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: rgb(58, 71, 90);
+}
+.left-div__bottom1 {
+    padding: 40px;
+    width: 400px;
+}
+.left-div__bottom2 {
+    padding: 40px;
+    border-radius: 20px;
+}
+.aside-div {
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width:1000px) {
+    .container {
+        padding: 20px;
+        background-color: aliceblue;
+        flex-direction: column;
+    }
+    .left-div__top {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .left-div__bottom {
+        flex-direction: column;
+    }
+    .left-div__top2 {
+        width: 100%;
+    }
+    .left-div__bottom1 {
+        width: 100%;
+    }
+}
